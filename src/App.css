@@ -21,12 +21,14 @@ header div{
 
 .brand img{
   border-radius: 50vmax;
+  width: 50%;
+  align-self: center;
 }
 
 .socials {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .contact-info{
@@ -186,7 +188,7 @@ footer div{
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 200px) {
   header{
     flex-direction: column;
   }
@@ -201,9 +203,15 @@ footer div{
     justify-content: space-evenly;
   }
 
+  #footer-contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
   .socials{
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   .hours{
