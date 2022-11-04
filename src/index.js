@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
@@ -18,16 +17,13 @@ const firebaseConfig = {
   projectId: "plazatropicalhomepage",
   storageBucket: "plazatropicalhomepage.appspot.com",
   messagingSenderId: "365256193216",
-  appId: "1:365256193216:web:777c8fe34ef7ac279f2925",
-  measurementId: "G-LC6L9NYNW9"
+  appId: "1:365256193216:web:d599c7ae575309ea9f2925",
+  measurementId: "G-10YG57X8R3"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
-
-
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
