@@ -26,20 +26,20 @@ export default function Footer(){
     return(
         <div className='footer'>            
         <NavBar />
-        <footer>
-        <div className='contact-info'>
+        <footer className='row'>
+        <div className='col contact-info'>
             <h2>Address</h2>
             <h3>{data.address}</h3>
             <h5>{data.phone}</h5>
             <p>{data.email}</p>
             {/* Insert address */}
             </div>
-            <div>
+            <div className='col brand'>
                 <img alt='logo' src={logo} />
             <h1>Plaza Tropical Supermarket Inc</h1>
             <h3>Social Media Icons</h3>
             </div>
-            <div className='hours' >
+            <div className='col hours' >
                 <h2>Hours</h2>
                 {data.hours.map(({day, hours})=>{
                     return (

@@ -7,7 +7,7 @@
 header {
   background-color: #276ebfe8;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   font-size: 1vmax;
   color: white;
   padding: 2em;
