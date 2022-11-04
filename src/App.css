@@ -23,19 +23,26 @@ header div{
 nav{
   display: flex;
   justify-content: space-around;
-  background-color: #60993e;
-  padding: 1em;
+  padding: 2.5vmin;
+  margin: .5vmin;
+  border: .5vmin solid #9e2b25b3;
+  border-radius: 5vmin;
+
 }
 
 nav a{
   text-decoration: none;
   text-align: center;
   color: #fff;
-  font-weight: 500;
+  font-size: 2.5vmin;
+  font-weight: 800;
+  letter-spacing: .25em;
+  border-bottom: .1em solid #60993e;
 }
 
 nav a:hover{
-  text-shadow: 0 0 .5em #276ebf;
+  text-shadow: 0 0 .25em #276ebf;
+  border-bottom: .1em solid #276ebf;
   transform: scale(1.5);
 }
 
@@ -83,6 +90,24 @@ nav a:hover{
   background-color: #276ebfe8;
   border: none;  
   padding: 1em;
+  margin: 0;
+  border-radius: 0%;
+}
+
+.footer nav a{
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  font-size: 2.5vmin;
+  font-weight: 800;
+  letter-spacing: .25em;
+  border-bottom: .1em solid #fff;
+}
+
+.footer nav a:hover{
+  text-shadow: 0 0 .2em #60993e;
+  border-bottom: .1em solid #fff;
+  transform: scale(1.5);
 }
 
 footer {
