@@ -26,7 +26,7 @@ export default function CateringPage(){
     return(
         <div className='catering-page'>
             <h2>Catering Page Title</h2>
-            <div>
+            <div className='catering-block'>
             <ContainerTwo content={blockOne} />
             <ContainerOne content={blockTwo} />
             </div>

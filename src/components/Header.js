@@ -1,7 +1,9 @@
 import React from "react";
+import { SocialIcon } from "react-social-icons";
+
 
 export default function Header() {
-  const logo = require("../assets/img/test_image_2.png");
+    const logo = require("../assets/img/placeholder_logo.png")
 
   const data = {
     address: "665 W Lancaster Rd, Orlando, FL 32809",
@@ -26,7 +28,11 @@ export default function Header() {
           <h3>{data.address}</h3>
           <h5>{data.phone}</h5>
           <p>{data.email}</p>
-          {/* Insert address */}
+          <div id="socials">
+          <SocialIcon url="https://www.facebook.com/profile.php?id=100063493482937/" target="_blank" /> 
+          <SocialIcon url="https://www.instagram.com/plazatropical/" target="_blank" /> 
+          </div>
+
         </div>
         <div className="col brand">
           <img alt="logo" src={logo} />
