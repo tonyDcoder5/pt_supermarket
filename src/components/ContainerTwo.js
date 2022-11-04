@@ -1,12 +1,20 @@
 import React from 'react'
 
 
-export default function ContainerTwo(){
+export default function ContainerTwo({content = {}}){
+
+    const pageData = content || {
+        title: "Loading content", 
+        description: "...",
+        image: require("../assets/img/test_image_2.png"),
+    }
+
 
     return(
         <div className='container-two'>
-            <h2>Container Two Title</h2>
-            <p>Container Text</p>
+            <img src={require( "../assets/img/test_image_1.jpeg")} alt="container media" />
+            <h2>{pageData.title}</h2>
+            <p>{pageData.description}</p>
         </div>
     )
 }

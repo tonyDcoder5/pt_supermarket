@@ -20,6 +20,18 @@ header div{
   text-align: center;
 }
 
+.contact-info{
+  line-height: .1vmin;
+  text-align: center;
+  font-size: 1.5vmin;
+}
+
+.hours{
+  text-align: center;
+  line-height: .25vmin;
+  font-size: 1.5vmin;
+}
+
 nav{
   display: flex;
   justify-content: space-around;
