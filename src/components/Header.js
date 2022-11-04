@@ -23,30 +23,33 @@ export default function Header() {
   return (
     <>
       <header className="row"> 
+      <div id="header-contact">
         <div className="col contact-info">
           <h2>Address</h2>
           <h3>{data.address}</h3>
           <h5>{data.phone}</h5>
           <p>{data.email}</p>
-          <div id="socials">
+        </div>
+        <div className="socials">
           <SocialIcon url="https://www.facebook.com/profile.php?id=100063493482937/" target="_blank" /> 
           <SocialIcon url="https://www.instagram.com/plazatropical/" target="_blank" /> 
           </div>
-
-        </div>
+          </div>
         <div className="col brand">
           <img alt="logo" src={logo} />
           <h1>Plaza Tropical Supermarket Inc</h1>
         </div>
         <div className="col hours">
+        <section>
           <h2>Hours</h2>
           {data.hours.map(({ day, hours }) => {
             return (
-              <p>
-                {day}: {hours[0]} - {hours[1]}
-              </p>
+              <span>
+              <h3>{day}:</h3><p>{hours[0]} - {hours[1]}</p>
+              </span>
             );
           })}
+          </section>
         </div>
       </header>
     </>
