@@ -36,8 +36,10 @@ export default function Header() {
           </div>
           </div>
         <div className="col brand">
+          <a href="/">
           <img alt="logo" src={logo} />
           <h1>Plaza Tropical Supermarket Inc</h1>
+          </a>
         </div>
         <div className="col hours">
         <section>

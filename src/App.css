@@ -19,6 +19,17 @@ header div{
   text-align: center;
 }
 
+
+header a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 2.5vmin;
+}
+
+header a:hover{
+  text-shadow: 0 0 5vmin #9e2b25;
+}
+
 .brand img{
   border-radius: 50vmax;
   width: 50%;
@@ -254,6 +265,16 @@ footer div{
   footer div{
     margin: 0vmin 0 1vmin 0;
   }
+}
+
+footer a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 2.5vmin;
+}
+
+footer a:hover{
+  text-shadow: 0 0 5vmin #9e2b25;
 }
 
 

@@ -40,8 +40,10 @@ export default function Footer() {
           </section>
         </div>
         <div className="col brand">
-          <img alt="logo" src={logo} />
-          <h1>Plaza Tropical Supermarket Inc</h1>
+          <a href="/">
+            <img alt="logo" src={logo} />
+            <h1>Plaza Tropical Supermarket Inc</h1>
+          </a>
         </div>
         <div id="footer-contact">
           <div className="col contact-info">
