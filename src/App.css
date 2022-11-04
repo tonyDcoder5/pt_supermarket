@@ -255,3 +255,9 @@ footer div{
     margin: 0vmin 0 1vmin 0;
   }
 }
+
+
+img {
+  width: 50%;
+  align-self: center;
+}
