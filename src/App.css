@@ -1,0 +1,124 @@
+.App{
+  background-color: #dad2d8;
+}
+
+/* GENERAL COMPONENTS */
+
+header {
+  background-color: #276ebfe8;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1vmax;
+  color: white;
+  padding: 2em;
+}
+
+header div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  background-color: #60993e;
+  padding: 1em;
+}
+
+nav a{
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+}
+
+nav a:hover{
+  text-shadow: 0 0 .5em #276ebf;
+  transform: scale(1.5);
+}
+
+.body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero{
+  background: #9e2b25;
+  border-radius: 1em;
+  margin: .25em;
+  padding: 2.5em;
+}
+
+.hero div{
+  background: #dad2d8;
+  padding: 2em;
+  border-radius: .5em;
+}
+
+.container-one{
+  display: flex;
+  flex-direction: column;
+  background-color: #dad2d8;
+  border: .1em solid #000;
+  margin: .25em;
+  padding: 2em;
+}
+
+.container-two{
+  display: flex;
+  flex-direction: column;
+  background-color: #60993e;
+  border: .1em solid #000;
+  margin: .25em;
+  padding: 2em;
+}
+
+.footer nav{
+  display: flex;
+  justify-content: space-around;
+  background-color: #276ebfe8;
+  border: none;  
+  padding: 1em;
+}
+
+footer {
+  background-color: #276ebfe8;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1vmax;
+  color: white;
+  padding: 2em;
+}
+
+footer div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+}
+
+
+/* PAGES STYLING */
+
+/* HOME PAGE STYLES */
+.home div{
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.section-two{
+  flex-direction: column;
+}
+
+/* CATERING PAGE */
+.catering-page div{
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+}
