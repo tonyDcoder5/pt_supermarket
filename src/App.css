@@ -166,6 +166,22 @@ footer div{
 
 }
 
+.footer-copy{
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+  padding: 2vmin;
+  line-height: .5vmin;
+  background-color: #276ebfe8;
+  color: #dad2d835;
+}
+
+.footer-copy a{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.248);
+}
+
 
 /* PAGES STYLING */
 
@@ -218,6 +234,8 @@ footer div{
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    margin: 0 0 2.5vmin 0;
+
   }
 
   .section-one{
