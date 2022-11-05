@@ -30,13 +30,12 @@ export default function HomeLayout() {
   return (
     <div className="home">
       <div className="section-one">
-        <ContainerTwo content={blockTwo} />
         <ContainerOne content={blockOne} />
+        <ContainerTwo content={blockTwo} />
       </div>
       <div className="section-two">
-
-        <ContainerOne content={blockThree} />        <ContainerTwo content={blockFour} />
-
+        <ContainerOne content={blockThree} />{" "}
+        <ContainerTwo content={blockFour} />
       </div>
     </div>
   );
