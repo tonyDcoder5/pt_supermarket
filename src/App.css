@@ -6,6 +6,7 @@
 header {
   background-color: #276ebfe8;
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   font-size: 1vmax;
   color: white;
@@ -17,6 +18,13 @@ header div{
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  margin: 0vmin 0 1vmin 0;
+}
+
+#header-contact{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 
@@ -38,7 +46,7 @@ header a:hover{
 
 .socials {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
 }
 
@@ -49,6 +57,10 @@ header a:hover{
 }
 
 .hours{
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 0 2.5vmin 0;
   text-align: center;
   line-height: 2vmin;
   font-size: 1.5vmin;
@@ -163,6 +175,7 @@ nav a:hover{
 footer {
   background-color: #276ebfe8;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   font-size: 1vmax;
   color: white;
@@ -174,8 +187,16 @@ footer div{
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  margin: 0vmin 0 1vmin 0;
 
 }
+
+#footer-contact{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
 
 .footer-copy{
   display: flex;
@@ -193,8 +214,19 @@ footer div{
   color: rgba(255, 255, 255, 0.248);
 }
 
+footer a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 2.5vmin;
+}
 
-/* PAGES STYLING */
+footer a:hover{
+  text-shadow: 0 0 5vmin #9e2b25;
+}
+
+
+
+/* PAGE STYLINGS */
 
 /* HOME PAGE STYLES */
 .section-one{
@@ -202,10 +234,32 @@ footer div{
   justify-content: space-around;
 }
 
+.section-one *{
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  
+}
 
 .section-two{
   flex-direction: column;
 }
+
+
+/* WEEKLY AD PAGE */
+
+
+/* GALLERY PAGE */
+.gallery-section{
+  display: flex;
+}
+
+.gallery-section *{
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
 
 /* CATERING PAGE */
 .catering-page{
@@ -225,118 +279,20 @@ footer div{
   align-items: center;
 }
 
+/* CONTACT PAGE */
 
-@media screen and (min-width: 200px) {
-  header{
-    flex-direction: column;
-  }
-
-  header div{
-    margin: 0vmin 0 1vmin 0;
-  }
-
-  #header-contact{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-
-  #footer-contact{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-
-  .socials{
-    flex-direction: column;
-    justify-content: space-around;
-  }
-
-  .hours{
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: 0 0 2.5vmin 0;
-
-  }
-
-  .contact {
-    display: flex;
-    justify-content: center;
-    background-color: #dad2d8;
-    border: .2vmin solid #000;
-    padding: 2vmin;
-  }
-
-  .section-one *{
-    width: 50%;
-    justify-content: center;
-    align-items: center;
-    
-  }
-
-  .gallery-section{
-    display: flex;
-  }
-
-  .gallery-section *{
-    width: 50%;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .contact-section{
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .contact-section *{
-    display: flex;
-    align-items: center;
-    width: 50%;
-    justify-content: center;
-  }
-
-  .contact *{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    text-align: center;
-  }
-
-  .contact .row{
-    font-size: 2.5vmin;
-    line-height: 3.5vmin;
-    margin: 0 0 1vmin 0;
-  }
-
-  .contact button{
-    width: 30%;
-    padding: 2.5vmin;
-    font-size: 2vmin;
-  }
-
-
-  footer{
-    flex-direction: column;
-  }
-
-  footer div{
-    margin: 0vmin 0 1vmin 0;
-  }
+.contact {
+  display: flex;
+  justify-content: center;
+  background-color: #dad2d8;
+  border: .2vmin solid #000;
+  padding: 2vmin;
 }
 
-footer a{
-  text-decoration: none;
-  color: #fff;
-  font-size: 2.5vmin;
-}
+@media screen and (min-width: 600px) {
 
-footer a:hover{
-  text-shadow: 0 0 5vmin #9e2b25;
-}
 
+}
 
 img {
   width: 50%;
