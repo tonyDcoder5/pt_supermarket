@@ -51,8 +51,7 @@ export default function ContactForm() {
   
   return (
     <div className="container-two">
-      <div className="contact">
-        <Form ref={form} onSubmit={sendEmail}>
+        <Form ref={form} onSubmit={sendEmail} className="contact-form">
           <Row>
             <Form.Group as={Col} controlId="user_name">
               <Form.Label>Name</Form.Label>
@@ -89,7 +88,6 @@ export default function ContactForm() {
             Send
           </Button>
         </Form>
-      </div>
       {sentNotice && (
         <div className="send-notice">
           <h2>{sentNotice.message}</h2>
