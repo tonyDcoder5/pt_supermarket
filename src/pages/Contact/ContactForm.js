@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { Form, Row, Col, Button } from "react-bootstrap";
 
-export default function Contact() {
+export default function ContactForm() {
 
   const form = useRef();
   const [sentNotice, setSentNotice] = useState(null);
@@ -53,7 +53,6 @@ export default function Contact() {
     <div className="container-two">
       <div className="contact">
         <Form ref={form} onSubmit={sendEmail}>
-            <h2>Contact Form</h2>
           <Row>
             <Form.Group as={Col} controlId="user_name">
               <Form.Label>Name</Form.Label>

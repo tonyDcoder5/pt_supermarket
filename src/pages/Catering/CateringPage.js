@@ -6,26 +6,25 @@ import ContainerTwo from '../../components/ContainerTwo'
 export default function CateringPage(){
 
     const blockOne = {
-        title: "Catering Block One",
-        description: "Catering description one",
+        title: "Catering Menu",
+        description: "Catering menu description",
         image: "../assets/img/test_image_3.jpeg", 
     }
 
     const blockTwo = {
-        title: "Catering Block Two",
-        description: "Catering description Two",
+        title: "Catering Scheduling Form",
+        description: "connect scheduling form to live google sheets/email",
         image: "../assets/img/test_image_2.jpeg", 
     }
 
     const blockThree = {
-        title: "Catering Block Three",
-        description: "Catering description Three",
+        title: "Lunch Menu ",
+        description: "",
         image: "../assets/img/test_image_4.jpeg", 
     }
 
     return(
         <div className='catering-page'>
-            <h2>Catering Page Title</h2>
             <div className='catering-block'>
             <ContainerTwo content={blockOne} />
             <ContainerOne content={blockTwo} />

@@ -3,48 +3,40 @@ import ContainerOne from "../../components/ContainerOne";
 import ContainerTwo from "../../components/ContainerTwo";
 
 export default function HomeLayout() {
-
   const blockOne = {
-    title: "Home Page Block One Title",
-    description: "Home Page Block One Description",
+    title: "Services Block",
+    description: "List available services and offers",
     image: "../assets/img/test_image_1.jpeg",
-  }
+  };
 
- const blockTwo = {
-    title: "Home Page Block Two Title",
-    description: "Home Page Block Two Description",
+  const blockTwo = {
+    title: "Weekly Ad Preview",
+    description: "",
     image: "../assets/img/test_image_2.png",
-    
-  }
+  };
 
+  const blockThree = {
+    title: "Gallery Preview block",
+    description: "Gallery PlaceHolder",
+    image: "../assets/img/test_image_3.jpeg",
+  };
 
- const blockThree = {
-  title: "Home Page Block Three Title",
-  description: "Home Page Block Three Description",
-  image: "../assets/img/test_image_3.jpeg",
-  
-}
-
-const blockFour = {
-   title: "Home Page Block Three Title",
-   description: "Home Page Block Three Description",
-   image: "../assets/img/test_image_4.jpeg",
-  
- }
-
-
+  const blockFour = {
+    title: "Directions/Location Google Maps Plugin",
+    description: "",
+    image: "../assets/img/test_image_4.jpeg",
+  };
 
   return (
     <div className="home">
-      <h2>Home Page Title</h2>
       <div className="section-one">
-        <ContainerOne content={blockOne} />
         <ContainerTwo content={blockTwo} />
+        <ContainerOne content={blockOne} />
       </div>
       <div className="section-two">
-        <ContainerTwo content={blockThree} /> 
-        
-        <ContainerOne content={blockFour} />
+
+        <ContainerOne content={blockThree} />        <ContainerTwo content={blockFour} />
+
       </div>
     </div>
   );

@@ -6,22 +6,14 @@ import ContainerTwo from '../../components/ContainerTwo'
 export default function WeeklyAd(){
 
     const blockOne = {
-        title: "Weekly Ad Title",
-        description: "Weekly Ad placeholder",
-        image: ""
-    }
-
-    const blockTwo = {
-        title: "Weekly Ad Block two",
-        description: "Weekly Ad block two placeholder",
+        title: "Weekly Ad Full View",
+        description: "stretch scroll animation to view full ad and embedded link for downloadable version",
         image: ""
     }
 
     return(
         <div className='weekly-ad'>
-            <h2>WeeklyAd Page Title</h2>
             <ContainerTwo content={blockOne}  />
-            <ContainerOne content={blockTwo}  />
         </div>
     )
 }
