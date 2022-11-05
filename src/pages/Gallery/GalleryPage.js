@@ -1,33 +1,33 @@
-import React from 'react'
-import ContainerOne from '../../components/ContainerOne'
-import ContainerTwo from '../../components/ContainerTwo'
+import React from "react";
+import ContainerOne from "../../components/ContainerOne";
+import ContainerTwo from "../../components/ContainerTwo";
 
+export default function GalleryPage() {
+  const blockOne = {
+    title: "Gallery full view Section",
+    description: "Gallery Carousel placeholder",
+    image: "",
+  };
 
-export default function GalleryPage(){
+  const blockTwo = {
+    title: "Gallery grid preview section",
+    description: "connect to google reviews",
+    image: "",
+  };
 
-    const blockOne = {
-        title: "Gallery full view Section",
-        description: "Gallery Carousel placeholder",
-        image: ""
-    }
+  const blockThree = {
+    title: "Live reviews Section",
+    description: "connect to google reviews",
+    image: "",
+  };
 
-    const blockTwo = {
-        title: "Gallery grid preview section",
-        description: "connect to google reviews",
-        image: ""
-    }
-
-    const blockThree = {
-        title: "Live reviews Section",
-        description: "connect to google reviews",
-        image: ""
-    }
-
-    return(
-        <div className='gallery-page'>
-            <ContainerOne content={blockOne} />
-            <ContainerTwo content={blockTwo}  />
-            <ContainerOne content={blockThree} />
-        </div>
-    )
+  return (
+    <div className="gallery-page">
+      <div className="gallery-section">
+        <ContainerOne content={blockOne} />
+        <ContainerTwo content={blockTwo} />
+      </div>
+      <ContainerOne content={blockThree} />
+    </div>
+  );
 }

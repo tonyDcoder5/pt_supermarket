@@ -208,10 +208,21 @@ footer div{
 }
 
 /* CATERING PAGE */
-.catering-page div{
+.catering-page{
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   padding: 2em;
+}
+
+.catering-block{
+  display: flex;
+}
+
+.catering-block * {
+  width: 50%;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -249,7 +260,6 @@ footer div{
 
   }
 
-
   .contact {
     display: flex;
     justify-content: center;
@@ -258,9 +268,26 @@ footer div{
     padding: 2vmin;
   }
 
-  .contact-section {
-    display: flex;
+  .section-one *{
+    width: 50%;
+    justify-content: center;
     align-items: center;
+    
+  }
+
+  .gallery-section{
+    display: flex;
+  }
+
+  .gallery-section *{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-section{
+    display: flex;
+    justify-content: space-between;
   }
 
   .contact-section *{
