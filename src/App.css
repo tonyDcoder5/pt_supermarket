@@ -267,6 +267,7 @@ footer a:hover {
   background-color: #dad2d8;
   border: 0.2vmin solid #000;
   margin: 2.5vmin;
+  padding: 1vmin 2.5vmin 1vmin 2.5vmin;
 }
 
 .contact-form div{
