@@ -1,6 +1,7 @@
 import React from 'react'
 import ContainerOne from '../../components/ContainerOne'
 import ContainerTwo from '../../components/ContainerTwo'
+import ContactForm from './ContactForm'
 
 
 export default function Contact(){
@@ -19,9 +20,11 @@ export default function Contact(){
 
     return(
         <div className='contact-page'>
-            <h2>Contact Page Title</h2>
-            <ContainerTwo content={blockOne} />
+            <h2>Contact Us!</h2>
+            <ContactForm />
+            {/* <ContainerTwo content={blockOne} /> */}
             <ContainerOne content={blockTwo} />
         </div>
+
     )
 }
