@@ -1,14 +1,9 @@
 import React from "react";
 import ContainerOne from "../../components/ContainerOne";
-import ContainerTwo from "../../components/ContainerTwo";
+import StoreHours from "./StoreHours";
 import ContactForm from "./ContactForm";
 
 export default function Contact() {
-  const blockOne = {
-    title: "Hours & contact info",
-    description: "Contact info block",
-    image: "",
-  };
 
   const blockTwo = {
     title: "WeeklyAd Preview",
@@ -20,7 +15,7 @@ export default function Contact() {
     <div className="contact-page">
       <h2>Contact Us!</h2>
       <div className="contact-section">
-        <ContainerTwo content={blockOne} />
+        <StoreHours />
         <ContactForm />
       </div>
       <ContainerOne content={blockTwo} />
