@@ -11,12 +11,7 @@ export default function Footer() {
     email: "plazatropical@cfl.rr.com",
     hours: [
       { day: "SUN", hours: ["8AM", "7PM"] },
-      { day: "MON", hours: ["7AM", "8PM"] },
-      { day: "TUES", hours: ["7AM", "8PM"] },
-      { day: "WED", hours: ["7AM", "8PM"] },
-      { day: "THURS", hours: ["7AM", "8PM"] },
-      { day: "FRI", hours: ["7AM", "8PM"] },
-      { day: "SAT", hours: ["7AM", "8PM"] },
+      { day: "MON-SAT", hours: ["7AM", "8PM"] },
     ],
   };
 
@@ -25,8 +20,8 @@ export default function Footer() {
       <NavBar />
       <footer className="row">
         <div className="col hours">
+        <h2>Hours</h2>
           <section>
-            <h2>Hours</h2>
             {data.hours.map(({ day, hours }) => {
               return (
                 <span>

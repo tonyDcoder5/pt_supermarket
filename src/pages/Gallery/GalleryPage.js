@@ -1,6 +1,7 @@
 import React from "react";
 import ContainerOne from "../../components/ContainerOne";
 import ContainerTwo from "../../components/ContainerTwo";
+import GalleryGrid from "./GalleryGrid";
 
 export default function GalleryPage() {
   const blockOne = {
@@ -21,13 +22,13 @@ export default function GalleryPage() {
     image: "",
   };
 
+
+
+
   return (
     <div className="gallery-page">
-      <div className="gallery-section">
-        <ContainerOne content={blockOne} />
-        <ContainerTwo content={blockTwo} />
-      </div>
-      <ContainerOne content={blockThree} />
+        <GalleryGrid />
+        <ContainerOne content={blockThree} />
     </div>
   );
 }

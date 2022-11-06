@@ -11,12 +11,7 @@ export default function Header() {
     email: "plazatropical@cfl.rr.com",
     hours: [
       { day: "SUN", hours: ["8AM", "7PM"] },
-      { day: "MON", hours: ["7AM", "8PM"] },
-      { day: "TUES", hours: ["7AM", "8PM"] },
-      { day: "WED", hours: ["7AM", "8PM"] },
-      { day: "THURS", hours: ["7AM", "8PM"] },
-      { day: "FRI", hours: ["7AM", "8PM"] },
-      { day: "SAT", hours: ["7AM", "8PM"] },
+      { day: "MON-SAT", hours: ["7AM", "8PM"] },
     ],
   };
 
@@ -42,8 +37,8 @@ export default function Header() {
           </a>
         </div>
         <div className="col hours">
-        <section>
-          <h2>Hours</h2>
+          <h2>Hours</h2>        
+          <section>
           {data.hours.map(({ day, hours }) => {
             return (
               <span>
