@@ -304,15 +304,13 @@ footer a:hover {
 
 .store-hours table{
   border: .1em solid #000;
-}
-
-.store-hours table *{
-  padding: 1vmin;
+  width: 100%;
 }
 
 .store-hours td{
+  width: 50%;
   border: .1em solid #000;
-}
+} 
 
 .contact-form {
   display: flex;
