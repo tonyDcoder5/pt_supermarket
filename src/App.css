@@ -276,7 +276,6 @@ footer a:hover {
 
 .store-hours{
   display: flex;
-  flex-direction: column;
   align-items: center;
   padding: 1vmin;
 }
@@ -291,7 +290,7 @@ footer a:hover {
   line-height: 3vmin;
   width: 90%;
   margin: 1vmin;
-  font-size: 3vmin;
+  font-size: 2.5vmin;
 }
 
 .store-hours h2{
@@ -306,7 +305,7 @@ footer a:hover {
 }
 
 .store-hours td{
-  width: 50%;
+  width: fit-content;
   border: .1em solid #000;
 } 
 
@@ -317,22 +316,36 @@ footer a:hover {
   background-color: #dad2d8;
   border: 0.2vmin solid #000;
   margin: 2.5vmin;
-  padding: 1vmin 2.5vmin 1vmin 2.5vmin;
+  padding: 3vmin;
+  width: 90%; 
+  align-self: center;
 }
 
 .contact-form div{
   display: flex;
+  width: 100%;
   flex-direction: column;
   padding: 1vmin 0 1vmin 0;
 }
 
 .contact-form *{
   text-align: center;
+  padding: .5vmin;
 }
 
 .contact-form button{
   margin: 2.5vmin;
   padding: 2.5vmin;
+  border-radius: 25%;
+  color: #fff;
+  background-color: #276ebf;
+  border: none;
+}
+
+.contact-form button:hover{
+  background-color: #60993e;
+  border: .2em solid #fff;
+
 }
 
 

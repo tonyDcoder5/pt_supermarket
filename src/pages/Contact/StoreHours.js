@@ -17,31 +17,52 @@ export default function StoreHours() {
     { day: "SAT", hours: ["7AM", "8PM"] },
   ];
 
+  const holidayHours = [
+    { day: "Thanksgiving", hours: ["AM", "PM"], date: "Nov 24" },
+    { day: "Christmas Eve", hours: ["AM", "PM"], date: "Dec 24" },
+    { day: "Christmas Day", hours: ["AM", "PM"], date: "Dec 25" },
+    { day: "New Years Eve", hours: ["AM", "PM"], date: "Dec 31" },
+    { day: "New Years", hours: ["AM", "PM"], date: "Jan 1" },
+  ];
+
   const data = {
     address: "665 W Lancaster Rd, Orlando, FL 32809",
     phone: "407-582-0140",
-    email: "plazatropical@cfl.rr.com" }
+    email: "plazatropical665@gmail.com",
+  };
 
   return (
-    <div className="container-two store-hours">
-    <section>
-      <h2>Store Hours</h2>
-      <table>
-        {hours.map((day) => {
-          return (
-            <tr>
-              <td>{day.day}</td>
-              <td>{day.hours[0]} - {day.hours[1]}</td>
-            </tr>
-          );
-        })}
-      </table>
+    <div className="store-hours container-two">
+      <section>
+        <h2>Store Hours</h2>
+        <table className="reg-hours">
+          {hours.map((day) => {
+            return (
+              <tr>
+                <td>{day.day}</td>
+                <td>
+                  {day.hours[0]} - {day.hours[1]}
+                </td>
+              </tr>
+            );
+          })}
+        </table>
       </section>
       <section>
-      <h2>Contact Info</h2>
-      <address>{data.address}</address>
-      <phone>{data.phone}</phone>
-      <email>{data.email}</email>
+        <h2>Holiday Hours</h2>
+        <table className="holiday-hours">
+          {holidayHours.map((day) => {
+            return (
+              <tr>
+                <td>{day.date}</td>
+                <td>{day.day}</td>
+                <td>
+                  {day.hours[0]} - {day.hours[1]}
+                </td>
+              </tr>
+            );
+          })}
+        </table>
       </section>
     </div>
   );
