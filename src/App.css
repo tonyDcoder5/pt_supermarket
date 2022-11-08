@@ -109,7 +109,6 @@ nav a {
   font-size: 2.5vmin;
   font-weight: 800;
   letter-spacing: 0.25em;
-  border-bottom: 0.1em solid #60993e;
 }
 
 nav a:hover {
@@ -173,7 +172,6 @@ nav a:hover {
   font-size: 2.5vmin;
   font-weight: 800;
   letter-spacing: 0.25em;
-  border-bottom: 0.1em solid #fff;
 }
 
 .footer nav a:hover {
