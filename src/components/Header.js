@@ -8,7 +8,7 @@ export default function Header() {
   const data = {
     address: "665 W Lancaster Rd, Orlando, FL 32809",
     phone: "407-582-0140",
-    email: "plazatropical@cfl.rr.com",
+    email: "plazatropical665@gmail.com",
     hours: [
       { day: "SUN", hours: ["8AM", "7PM"] },
       { day: "MON-SAT", hours: ["7AM", "8PM"] },
@@ -18,9 +18,14 @@ export default function Header() {
   return (
     <>
       <header className="row"> 
+      <div className="col brand">
+          <a href="/">
+          <h1>Plaza Tropical Supermarket Inc</h1>
+          <img alt="logo" src={logo} />
+          </a>
+        </div>
       <div id="header-contact">
         <div className="col contact-info">
-          <h2>Address</h2>
           <h3>{data.address}</h3>
           <h5>{data.phone}</h5>
           <p>{data.email}</p>
@@ -30,12 +35,6 @@ export default function Header() {
           <SocialIcon url="https://www.instagram.com/plazatropical/" target="_blank" /> 
           </div>
           </div>
-        <div className="col brand">
-          <a href="/">
-          <img alt="logo" src={logo} />
-          <h1>Plaza Tropical Supermarket Inc</h1>
-          </a>
-        </div>
         <div className="col hours">
           <h2>Hours</h2>        
           <section>

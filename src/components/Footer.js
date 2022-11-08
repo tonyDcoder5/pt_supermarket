@@ -8,7 +8,7 @@ export default function Footer() {
   const data = {
     address: "665 W Lancaster Rd, Orlando, FL 32809",
     phone: "407-582-0140",
-    email: "plazatropical@cfl.rr.com",
+    email: "plazatropical665@gmail.com",
     hours: [
       { day: "SUN", hours: ["8AM", "7PM"] },
       { day: "MON-SAT", hours: ["7AM", "8PM"] },
@@ -42,7 +42,6 @@ export default function Footer() {
         </div>
         <div id="footer-contact">
           <div className="col contact-info">
-            <h2>Address</h2>
             <h3>{data.address}</h3>
             <h5>{data.phone}</h5>
             <p>{data.email}</p>
