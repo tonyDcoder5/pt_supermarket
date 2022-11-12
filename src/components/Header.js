@@ -41,7 +41,7 @@ export default function Header() {
           {data.hours.map(({ day, hours }) => {
             return (
               <span>
-              <h3>{day}:</h3><p>{hours[0]} - {hours[1]}</p>
+              <h3>{day}</h3><p>{hours[0]} - {hours[1]}</p>
               </span>
             );
           })}

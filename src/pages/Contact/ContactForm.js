@@ -51,6 +51,7 @@ export default function ContactForm() {
   
   return (
     <div className="container-two">
+      <h2>Contact Us!</h2>
         <Form ref={form} onSubmit={sendEmail} className="contact-form">
           <Row>
             <Form.Group as={Col} controlId="user_name">

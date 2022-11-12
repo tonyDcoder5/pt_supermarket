@@ -14,7 +14,7 @@ header {
   justify-content: space-evenly;
   font-size: 1vmax;
   color: white;
-  padding: 2em;
+  padding: 2.5vmin;
 }
 
 header div {
@@ -54,18 +54,17 @@ header a:hover {
 }
 
 .contact-info {
-  line-height: 1vmin;
+  margin: 0;
+  line-height: 0;
   text-align: center;
-  font-size: 2vmin;
+  font-size: 2.5vmin;
 }
 
 .hours {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  border: 0.1em solid #000;
   padding: 1vmin;
-  background-color: #dad2d8;
   width: 100%;
   margin: 0 0 2.5vmin 0;
   text-align: center;
@@ -74,7 +73,10 @@ header a:hover {
 
 .hours h2{
   font-size: 4vmin;
-  color: #60993e;
+  margin: 1vmin;
+  padding: .5em;
+  border-bottom: .25em dotted #9e2b25;
+  color: #fff;
 }
 
 .hours section {
@@ -86,19 +88,20 @@ header a:hover {
 
 .hours section span {
   margin: 1vmin;
-  border: 0.1em solid #000;
+  border-radius: 5vmin;
   background-color: #60993e;
+  box-shadow: 0 0 .5em #000;
   padding: 0.5vmin;
   width: 50%;
-  font-size: 2vmin;
+  font-size: 2.5vmin;
 }
 
 nav {
   display: flex;
   justify-content: space-around;
   padding: 2.5vmin;
-  margin: 0.5vmin;
-  border: 0.5vmin solid #60993e;
+  margin: 2vmin 1vmin 2vmin 1vmin;
+  border: 0.5vmin solid #9e2b25;
   border-radius: 5vmin;
 }
 
@@ -107,8 +110,9 @@ nav a {
   text-align: center;
   color: #fff;
   font-size: 2.5vmin;
-  font-weight: 800;
-  letter-spacing: 0.25em;
+  font-weight: 750;
+  letter-spacing: 0.2em;
+  text-shadow: 0 0 .25em #000;
 }
 
 nav a:hover {
@@ -149,9 +153,10 @@ nav a:hover {
 .container-two {
   display: flex;
   flex-direction: column;
-  background-color: #60993e;
-  border: 0.1em solid #000;
-  margin: 0.5vmin;
+  background-color: #276ebf;
+  /* border: 0.1em solid #000; */
+  margin: 2vmin;
+  border-radius: 5vmin;
   padding: 1vmin 0 1vmin 0;
 }
 
@@ -291,48 +296,61 @@ footer a:hover {
 .store-hours{
   display: flex;
   align-items: center;
-  padding: 1vmin;
+  padding: 2vmin 0 5vmin 0;
 }
 
 .store-hours section{
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #dad2d8;
-  border: .1em solid #000;
-  padding: 1em 2em 1em 2em;
-  line-height: 3vmin;
+  line-height: 5vmin;
   width: 90%;
   margin: 1vmin;
-  font-size: 2.5vmin;
+  font-size: 2.75vmin;
 }
 
-.store-hours h2{
-  border-bottom: .1em solid #000;
-  padding: .5vmin;
+/* .store-hours h2{
+  border-bottom: .25em dotted #9e2b25;
+  padding: 1vmin;
   width: fit-content;
-}
+  color: #fff;
+} */
 
 .store-hours table{
   border: .1em solid #000;
+  background-color: #60993e;
+  box-shadow: 0 0 .5em #fff;
   width: 100%;
+  padding: 2.5vmin;
+  border-radius: 2vmin;
 }
 
 .store-hours td{
   width: fit-content;
-  border: .1em solid #000;
+  border-radius: 5vmin;
+  padding: 1vmin;
+  border: .15em solid #000;
+  background-color: #fff;
 } 
 
 .contact-form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #dad2d8;
-  border: 0.2vmin solid #000;
+  background-color: #60993e;
   margin: 2.5vmin;
   padding: 3vmin;
   width: 90%; 
+  border-radius: 2vmin;
+  box-shadow: 0 0 .5em #000;
   align-self: center;
+}
+
+.contact-page h2{
+  border-bottom: .25em dotted #9e2b25;
+  padding: 1vmin;
+  width: fit-content;
+  color: #fff;
 }
 
 .contact-form div{
@@ -359,7 +377,15 @@ footer a:hover {
 .contact-form button:hover{
   background-color: #60993e;
   border: .2em solid #fff;
+}
 
+.contact-page .weekly-ad iframe{
+  margin: 2vmin 0 2vmin 0;
+  height: 100vmin;
+}
+
+.contact-section .container-two{
+  align-items: center;
 }
 
 

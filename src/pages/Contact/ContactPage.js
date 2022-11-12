@@ -2,6 +2,7 @@ import React from "react";
 import ContainerOne from "../../components/ContainerOne";
 import StoreHours from "./StoreHours";
 import ContactForm from "./ContactForm";
+import WeeklyAd from "../WeeklyAd/WeeklyAd";
 
 export default function Contact() {
 
@@ -15,12 +16,11 @@ export default function Contact() {
 
   return (
     <div className="contact-page">
-      <h2>Contact Us!</h2>
       <div className="contact-section">
         <StoreHours />
         <ContactForm />
       </div>
-      <ContainerOne content={blockTwo} />
+      <a href="/weekly-ad"><WeeklyAd /></a>
     </div>
   );
 }
