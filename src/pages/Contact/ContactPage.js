@@ -5,6 +5,8 @@ import ContactForm from "./ContactForm";
 
 export default function Contact() {
 
+
+
   const blockTwo = {
     title: "WeeklyAd Preview",
     description: "",
