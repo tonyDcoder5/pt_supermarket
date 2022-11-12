@@ -2,7 +2,7 @@ import React from "react";
 import ContainerOne from "../../components/ContainerOne";
 import ContainerTwo from "../../components/ContainerTwo";
 
-import adPDF from "../../assets/docs/110322_weeklyad.pdf";
+import adPDF from "../../assets/docs/110322_weeklyad.pdf#toolbar=0";
 
 export default function WeeklyAd() {
   const blockOne = {
@@ -14,7 +14,8 @@ export default function WeeklyAd() {
 
   return (
     <div className="weekly-ad">
-      <iframe title="weekly-ad-1103" type="application/pdf" src={adPDF} width= "500" height= "375" />
+      <iframe title="weekly-ad-1103" type="application/pdf" src={`${adPDF}`} width= "100%" height="500vmin" view="fit" >
+        </iframe>
 
     </div>
   );
