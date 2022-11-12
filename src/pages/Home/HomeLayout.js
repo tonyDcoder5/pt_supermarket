@@ -1,5 +1,6 @@
 import React from "react";
 import ContainerOne from "../../components/ContainerOne";
+import WeeklyAd from "../WeeklyAd/WeeklyAd";
 import ContainerTwo from "../../components/ContainerTwo";
 
 export default function HomeLayout() {
@@ -31,7 +32,8 @@ export default function HomeLayout() {
     <div className="home">
       <div className="section-one">
         <ContainerOne content={blockOne} />
-        <ContainerTwo content={blockTwo} />
+          <WeeklyAd />
+          <a href="/weekly-ad"><button>Ad Page</button></a>
       </div>
       <div className="section-two">
         <ContainerOne content={blockThree} />{" "}

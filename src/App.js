@@ -27,7 +27,7 @@ function App() {
           <Routes>
             <Route exact path="/" element={<Navigate to="/home" />} />
             <Route path="/home" element={<HomeLayout />} />
-            <Route path="/weekly" element={<WeeklyAd />} />
+            <Route path="/weekly-ad" element={<WeeklyAd />} />
             <Route path="/gallery" element={<GalleryPage />} />
             <Route path="/catering" element={<CateringPage />} />
             <Route path="/contact" element={<Contact />} />

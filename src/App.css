@@ -243,6 +243,10 @@ footer a:hover {
   flex-direction: column;
 }
 
+.home .weekly-ad iframe{
+  height: 75vmin;
+}
+
 /* WEEKLY AD PAGE */
 .weekly-ad{
   margin: 2vmin;
@@ -251,6 +255,7 @@ footer a:hover {
 .weekly-ad iframe{
   border-style: none;
   border-radius: 2em;
+  height: 375vmin;
   box-shadow: 0 0 0.25em #000;
 }
 
