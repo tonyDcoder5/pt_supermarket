@@ -33,7 +33,6 @@ export default function HomeLayout() {
       <div className="section-one">
         <ContainerOne content={blockOne} />
           <WeeklyAd />
-          <a href="/weekly-ad"><button>Ad Page</button></a>
       </div>
       <div className="section-two">
         <ContainerOne content={blockThree} />{" "}

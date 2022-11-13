@@ -317,6 +317,48 @@ footer a:hover {
   flex-direction: column;
 }
 
+
+  /* Lunch Menu */
+  .lunch-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .lunch-menu ul{
+    padding: 2vmin;
+  }
+
+  .lunch-menu li{
+    list-style: none;
+  }
+
+  .main-entrees{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .lunch-menu section{
+    margin: 2vmin;
+    border: .1em solid #fff;
+    border-radius: 2.5vmin;
+    padding: 1.5vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .lunch-menu .sides{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .lunch-special{
+    display: flex;
+  }
+
+
 /* CONTACT PAGE */
 .contact-page{
   display: flex;
