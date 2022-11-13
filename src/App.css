@@ -235,6 +235,36 @@ footer a:hover {
   text-shadow: 0 0 5vmin #9e2b25;
 }
 
+.not-found{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1vmin;
+  border: .2em solid #000;
+  border-radius: 2.5vmin;
+  padding: 5vmin;
+}
+
+.not-found a{
+  text-decoration: none;
+  color: #fff;
+  text-shadow: 0 0 .2em #000;
+  font-size: 3.5vmin;
+}
+
+.not-found a:hover{
+  text-shadow: 0 0 .2em #fff;
+  border-bottom: .25em solid #9e2b25;
+  margin: 0;
+}
+
+.not-found h2{
+  border-bottom: .25em dotted #9e2b25;
+  width: fit-content;
+  font-size: 5vmin;
+  margin: 0;
+}
+
 /* PAGE STYLINGS */
 
 /* HOME PAGE STYLES */
@@ -342,7 +372,8 @@ footer a:hover {
   padding: 3vmin;
   width: 90%; 
   border-radius: 2vmin;
-  box-shadow: 0 0 .5em #000;
+  border: .25vmin solid #000;
+  box-shadow: 0 0 .5em #fff;
   align-self: center;
 }
 

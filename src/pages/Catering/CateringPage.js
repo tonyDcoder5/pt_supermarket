@@ -1,6 +1,7 @@
 import React from 'react'
 import ContainerOne from '../../components/ContainerOne'
 import ContainerTwo from '../../components/ContainerTwo'
+import LunchMenu from './LunchMenu'
 
 
 export default function CateringPage(){
@@ -29,7 +30,7 @@ export default function CateringPage(){
             <ContainerTwo content={blockOne} />
             <ContainerOne content={blockTwo} />
             </div>
-            <ContainerTwo content={blockThree} />
+            <LunchMenu />
         </div>
     )
 }

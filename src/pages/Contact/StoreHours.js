@@ -8,13 +8,13 @@ export default function StoreHours() {
   };
 
   const hours = [
-    { day: "SUN", hours: ["8AM", "7PM"] },
-    { day: "MON", hours: ["7AM", "8PM"] },
-    { day: "TUES", hours: ["7AM", "8PM"] },
-    { day: "WED", hours: ["7AM", "8PM"] },
-    { day: "THURS", hours: ["7AM", "8PM"] },
-    { day: "FRI", hours: ["7AM", "8PM"] },
-    { day: "SAT", hours: ["7AM", "8PM"] },
+    { day: "Sunday", hours: ["8AM", "7PM"] },
+    { day: "Monday", hours: ["7AM", "8PM"] },
+    { day: "Tuesday", hours: ["7AM", "8PM"] },
+    { day: "Wednesday", hours: ["7AM", "8PM"] },
+    { day: "Thursday", hours: ["7AM", "8PM"] },
+    { day: "Friday", hours: ["7AM", "8PM"] },
+    { day: "Saturday", hours: ["7AM", "8PM"] },
   ];
 
   const holidayHours = [
