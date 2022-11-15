@@ -44,16 +44,18 @@ export default function GalleryGrid({ content = {} }) {
 
   return (
     <div className="gallery-grid">
-      <Carousel cols={3} rows={2} gap={5} loop>
-        {[...Array(20)].map((block, i) => {
-          return (
-            <Carousel.Item key={i}>
-              <img src="https://picsum.photos/800/600?random=1" />
-             
-            </Carousel.Item>
-          );
-        })}
-       
+      <Carousel
+        cols={3}
+        rows={3}
+        gap={1}
+        containerStyle={{ background: "transparent" }}
+        loop="infinite" 
+      >
+        {[...Array(18)].map((_, i) => (
+          <Carousel.Item key={i}>
+            <img src={require("../../assets/img/test_image_2.png")} />
+          </Carousel.Item>
+        ))}
       </Carousel>
     </div>
   );
