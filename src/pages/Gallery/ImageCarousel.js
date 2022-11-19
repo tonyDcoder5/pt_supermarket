@@ -1,22 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Carousel from "react-grid-carousel";
 
-export default function GalleryGrid({ content = {} }) {
-  
-  const [activeImg, setActiveImg] = useState(require("../../assets/img/test_image_2.png"))
 
-  const imageClick = (i) => {
-
-    setActiveImg(imageGrid[i].image)
-
-  }
-  
-  var pageData = {
-    title: "GalleryGrid Loading",
-    description: "...",
-    image: "../../assets/img/test_image_2.png",
-    altText: "sample-text",
-  };
+export default function ImageCarousel({content}) {
 
   var imageGrid = [
     {
@@ -51,20 +37,19 @@ export default function GalleryGrid({ content = {} }) {
     },
   ];
 
-
-
+  
   return (
-    <div className="gallery-grid">
-      <img src={activeImg} alt="currrent-image" />
+    <div className="image-carousel container-one">
       <Carousel
         cols={5}
         rows={1}
+        gap={1}
         containerStyle={{ background: "transparent" }}
         loop
       >
         {imageGrid.map((_, i) => (
           <Carousel.Item key={i}>
-            <img src={imageGrid[i].image} onClick={() => imageClick(i)} />
+            <img src={imageGrid[i].image} />
           </Carousel.Item>
         ))}
       </Carousel>

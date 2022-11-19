@@ -280,6 +280,11 @@ footer a:hover {
 
 .home .weekly-ad iframe{
   height: 75vmin;
+  width: 100%;
+}
+
+.home .image-carousel div{
+  align-self: center;
 }
 
 /* WEEKLY AD PAGE */
@@ -301,6 +306,10 @@ footer a:hover {
   border: .2vmin solid #000;
   color: #000;
   background-color: #60993e;
+}
+
+.gallery-grid div{
+  align-self: center;
 }
 
 

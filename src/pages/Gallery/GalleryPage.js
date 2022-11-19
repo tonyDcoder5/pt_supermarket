@@ -23,8 +23,6 @@ export default function GalleryPage() {
   };
 
 
-
-
   return (
     <div className="gallery-page">
         <GalleryGrid />

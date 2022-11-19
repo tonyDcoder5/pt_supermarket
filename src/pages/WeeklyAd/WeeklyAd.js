@@ -16,7 +16,6 @@ export default function WeeklyAd() {
     <div className="weekly-ad">
       <iframe title="weekly-ad-1103" type="application/pdf" src={`${adPDF}`} width= "100%" height="500vmin" view="fit" >
         </iframe>
-
     </div>
   );
 }
