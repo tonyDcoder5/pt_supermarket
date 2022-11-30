@@ -1,5 +1,5 @@
 .App {
-  background-color: rgba(241, 239, 239, 0.581);
+  background-color: #276ebf;
 }
 
 * {
@@ -441,12 +441,22 @@ footer a:hover {
 .contact-page{
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .store-hours{
   display: flex;
   align-items: center;
   padding: 2vmin 0 5vmin 0;
+}
+
+@media screen and (max-width: 800px) {
+  .contact-section{
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+  }
 }
 
 .store-hours section{
@@ -470,9 +480,9 @@ footer a:hover {
   border: .1em solid #000;
   background-color: #60993e;
   box-shadow: 0 0 .5em #fff;
-  width: 100%;
   padding: 2.5vmin;
   border-radius: 2vmin;
+  width: 100%;
 }
 
 .store-hours td{
@@ -488,13 +498,11 @@ footer a:hover {
   flex-direction: column;
   align-items: center;
   background-color: #60993e;
-  margin: 2.5vmin;
-  padding: 3vmin;
-  width: 90%; 
+  padding: 2vmin;
   border-radius: 2vmin;
   border: .25vmin solid #000;
   box-shadow: 0 0 .5em #fff;
-  align-self: center;
+  width: 100%;
 }
 
 .contact-page h2{
@@ -502,6 +510,7 @@ footer a:hover {
   padding: 1vmin;
   width: fit-content;
   color: #fff;
+  align-self: center;
 }
 
 .contact-form div{
@@ -536,7 +545,7 @@ footer a:hover {
 }
 
 .contact-section .container-two{
-  align-items: center;
+  /* align-items: center; */
 }
 
 
@@ -572,7 +581,7 @@ footer a:hover {
   }
 
   .contact-section .container-two{
-    width: 50%;
+    width: 90%;
     justify-content: center;
     align-items: center;
   }
