@@ -1,6 +1,8 @@
 import React from 'react'
 import ContainerOne from '../../components/ContainerOne'
 import ContainerTwo from '../../components/ContainerTwo'
+import CateringForm from './CateringForm'
+import CateringMenu from './CateringMenu'
 import LunchMenu from './LunchMenu'
 
 
@@ -27,8 +29,8 @@ export default function CateringPage(){
     return(
         <div className='catering-page'>
             <div className='catering-block'>
-            <ContainerTwo content={blockOne} />
-            <ContainerOne content={blockTwo} />
+            <CateringMenu />
+            <CateringForm />
             </div>
             <LunchMenu />
         </div>

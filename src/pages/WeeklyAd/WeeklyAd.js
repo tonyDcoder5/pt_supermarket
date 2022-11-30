@@ -14,8 +14,20 @@ export default function WeeklyAd() {
 
   return (
     <div className="weekly-ad">
-      <iframe title="weekly-ad-1103" type="application/pdf" src={`${adPDF}`} width= "100%" height="500vmin" view="fit" >
-        </iframe>
+      <iframe
+        title="weekly-ad-1103"
+        type="application/pdf"
+        src={`${adPDF}`}
+        width="100%"
+        height="500vmin"
+        view="fit"
+      ></iframe>
+      <a
+        href="https://drive.google.com/file/d/11u82ONrWlgO2SFHELeIBBRKeDL_Nmr6L/view"
+        target="_blank"
+      >
+        PDF View
+      </a>
     </div>
   );
 }

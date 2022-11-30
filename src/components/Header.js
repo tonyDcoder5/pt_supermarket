@@ -26,8 +26,8 @@ export default function Header() {
         </div>
       <div id="header-contact">
         <div className="col contact-info">
-          <h3>{data.address}</h3>
-          <h5>{data.phone}</h5>
+          <p>{data.address}</p>
+          <p>{data.phone}</p>
           <p>{data.email}</p>
         </div>
         <div className="socials">
@@ -35,18 +35,7 @@ export default function Header() {
           <SocialIcon url="https://www.instagram.com/plazatropical/" target="_blank" /> 
           </div>
           </div>
-        <div className="col hours">
-          <h2>Hours</h2>        
-          <section>
-          {data.hours.map(({ day, hours }) => {
-            return (
-              <span>
-              <h3>{day}</h3><p>{hours[0]} - {hours[1]}</p>
-              </span>
-            );
-          })}
-          </section>
-        </div>
+        
       </header>
     </>
   );
