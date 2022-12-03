@@ -1,105 +1,125 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ContainerTwo from "../../components/ContainerTwo";
 
 export default function CateringMenu() {
+  const [display, setDisplay] = useState(null);
+
   const cateringMenu = [
     {
-      type: "Vianda",
-      name: "BANDEJA DE GUINEO EN ESCABECHE",
-      smSize: 25,
-      lgSize: 40,
-    },
-    {
-      type: "Vianda",
-      name: "BANDEJA DE MADUROS",
-      smSize: 30,
-      lgSize: 50,
-    },
-    {
-      type: "Vianda",
-      name: "BANDEJA DE TOSTONES",
-      smSize: 35,
-      lgSize: 55,
-    },
-    {
-      type: "Vianda",
-      name: "BANDEJA DE MANGU",
-      smSize: 35,
-      lgSize: 55,
-    },
-    {
-      type: "Vianda",
-      name: "BANDEJA DE PURE DE PAPA",
-      smSize: 25,
-      lgSize: 40,
-    },
-    {
-      type: "Vianda",
-      name: "BANDEJA DE YUCA",
-      smSize: 20,
-      lgSize: 35,
-    },
-    {
-      type: "Arroz",
-      name: "BANDEJA DE ARROZ BLANCO",
-      smSize: 25,
-      lgSize: 40,
-    },
-    {
-      type: "Arroz",
-      name: "BANDEJA DE ARROZ CON GANDULES",
-      smSize: 30,
-      lgSize: 50,
-    },
-    {
-      type: "Arroz",
-      name: "BANDEJA DE ARROZ CONGRI",
-      smSize: 30,
-      lgSize: 50,
-    },
-    {
-      type: "Arroz",
-      name: "BANDEJA DE ARROZ MORO",
-      smSize: 30,
-      lgSize: 50,
-    },
-    {
-      type: "Arroz",
-      name: "BANDEJA DE ARROZ CON VEGETALES",
-      smSize: 30,
-      lgSize: 50,
-    },
-    {
-      type: "Arroz",
-      name: "HABICHUELAS VASO DE 32 OZ",
-      smSize: 9,
+      type: "",
+      name: "",
+      smSize: 0,
       lgSize: 0,
     },
-    {
-      type: "Ensaladas",
-      name: "BANDEJA DE ENSALADA DE PAPA",
-      smSize: 25,
-      lgSize: 40,
-    },
-    {
-      type: "Ensaladas",
-      name: "BANDEJA DE ENSALADA VERDE",
-      smSize: 25,
-      lgSize: 40,
-    },
-    {
-      type: "Ensaladas",
-      name: "BANDEJA DE ENSALADA DE CODITOS",
-      smSize: 30,
-      lgSize: 50,
-    },
-    {
-      type: "Pescado",
-      name: "BANDEJA DE BACALAO",
-      smSize: 45,
-      lgSize: 80,
-    },
-    {
+  ];
+
+  const catering = {
+    Platters: [
+      {
+        type: "Vianda",
+        name: "BANDEJA DE GUINEO EN ESCABECHE",
+        smSize: 25,
+        lgSize: 40,
+      },
+      {
+        type: "Vianda",
+        name: "BANDEJA DE MADUROS",
+        smSize: 30,
+        lgSize: 50,
+      },
+      {
+        type: "Vianda",
+        name: "BANDEJA DE TOSTONES",
+        smSize: 35,
+        lgSize: 55,
+      },
+      {
+        type: "Vianda",
+        name: "BANDEJA DE MANGU",
+        smSize: 35,
+        lgSize: 55,
+      },
+      {
+        type: "Vianda",
+        name: "BANDEJA DE PURE DE PAPA",
+        smSize: 25,
+        lgSize: 40,
+      },
+      {
+        type: "Vianda",
+        name: "BANDEJA DE YUCA",
+        smSize: 20,
+        lgSize: 35,
+      },
+    ],
+    Rice: [
+      {
+        type: "Arroz",
+        name: "BANDEJA DE ARROZ BLANCO",
+        smSize: 25,
+        lgSize: 40,
+      },
+      {
+        type: "Arroz",
+        name: "BANDEJA DE ARROZ CON GANDULES",
+        smSize: 30,
+        lgSize: 50,
+      },
+      {
+        type: "Arroz",
+        name: "BANDEJA DE ARROZ CONGRI",
+        smSize: 30,
+        lgSize: 50,
+      },
+      {
+        type: "Arroz",
+        name: "BANDEJA DE ARROZ MORO",
+        smSize: 30,
+        lgSize: 50,
+      },
+      {
+        type: "Arroz",
+        name: "BANDEJA DE ARROZ CON VEGETALES",
+        smSize: 30,
+        lgSize: 50,
+      },
+      {
+        type: "Arroz",
+        name: "HABICHUELAS VASO DE 32 OZ",
+        smSize: 9,
+        lgSize: 0,
+      },
+    ],
+    Salad: [
+      {
+        type: "Ensaladas",
+        name: "BANDEJA DE ENSALADA DE PAPA",
+        smSize: 25,
+        lgSize: 40,
+      },
+      {
+        type: "Ensaladas",
+        name: "BANDEJA DE ENSALADA VERDE",
+        smSize: 25,
+        lgSize: 40,
+      },
+      {
+        type: "Ensaladas",
+        name: "BANDEJA DE ENSALADA DE CODITOS",
+        smSize: 30,
+        lgSize: 50,
+      },
+    ],
+    Fish: [
+      {
+        type: "Pescado",
+        name: "BANDEJA DE BACALAO",
+        smSize: 45,
+        lgSize: 80,
+      },
+    ],
+    Beef: [
+      {
         type: "Carne De Res",
         name: "BANDEJA DE CARNE GUISADA",
         smSize: 55,
@@ -117,6 +137,8 @@ export default function CateringMenu() {
         smSize: 45,
         lgSize: 80,
       },
+    ],
+    Pork: [
       {
         type: "Carne De Cerdo",
         name: "PERNIL DELANTERO",
@@ -141,6 +163,8 @@ export default function CateringMenu() {
         smSize: 45,
         lgSize: 85,
       },
+    ],
+    Poultry: [
       {
         type: "Aves",
         name: "PAVO HORNEADO",
@@ -183,19 +207,40 @@ export default function CateringMenu() {
         smSize: 35,
         lgSize: 60,
       },
-    {
-      type: "",
-      name: "",
-      smSize: 0,
-      lgSize: 5,
-    },
-  ];
+    ],
+  };
+
+  const handleDisplay = (e) => {
+    setDisplay(catering[e.target.value]);
+  };
 
   return (
-    <div className="container-two catering-page">
-      <div className="catering-block">
-        <ContainerTwo  />
+    <div className="container-one catering-select">
+        <label htmlFor="dishes">Select a Catering Category: </label>
+        <select name="dishes" id="dishes" onChange={handleDisplay}>
+          <option value="">Select dish:</option>
+          {Object.keys(catering).map((key, index) => {
+            return <option value={key}>{key}</option>;
+          })}
+        </select>
+        <div className="catering-menu">
+              {display &&
+                display.map((item) => {
+                  return (
+                    <section className="menu-item">
+                      <img
+                        src={require("../../assets/img/test_image_1.jpeg")}
+                      />
+                      <div>
+                        <p>{item.name}</p>
+                        <span>
+                          Sm: ${item.smSize} || Lg: ${item.lgSize}
+                        </span>
+                      </div>
+                    </section>
+                  );
+                })}
+        </div>
       </div>
-    </div>
   );
 }
