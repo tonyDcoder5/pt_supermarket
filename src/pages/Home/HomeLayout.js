@@ -1,7 +1,7 @@
 import React from "react";
 import ContainerOne from "../../components/ContainerOne";
 import WeeklyAd from "../WeeklyAd/WeeklyAd";
-import ContainerTwo from "../../components/ContainerTwo";
+import Location from "../../components/Location";
 import ImageCarousel from "../Gallery/ImageCarousel";
 
 export default function HomeLayout() {
@@ -37,7 +37,8 @@ export default function HomeLayout() {
       </div>
       <div className="section-two">
         <ImageCarousel />
-        <ContainerTwo content={blockFour} />
+        <Location />
+        {/* <ContainerTwo content={blockFour} /> */}
       </div>
     </div>
   );

@@ -3,6 +3,8 @@ import ContainerOne from "../../components/ContainerOne";
 import StoreHours from "./StoreHours";
 import ContactForm from "./ContactForm";
 import WeeklyAd from "../WeeklyAd/WeeklyAd";
+import Location from "../../components/Location";
+import Reviews from "../../components/Reviews";
 
 export default function Contact() {
   const blockTwo = {
@@ -20,6 +22,7 @@ export default function Contact() {
       <a href="/weekly-ad">
         <WeeklyAd />
       </a>
+      <Location />
     </div>
   );
 }

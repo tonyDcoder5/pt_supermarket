@@ -1,6 +1,7 @@
 import React from "react";
 import ContainerOne from "../../components/ContainerOne";
 import ContainerTwo from "../../components/ContainerTwo";
+import Location from "../../components/Location";
 import GalleryGrid from "./GalleryGrid";
 
 export default function GalleryPage() {
@@ -26,7 +27,8 @@ export default function GalleryPage() {
   return (
     <div className="gallery-page">
         <GalleryGrid />
-        <ContainerOne content={blockThree} />
+        <Location />
+        {/* <ContainerOne content={blockThree} /> */}
     </div>
   );
 }

@@ -186,6 +186,11 @@ nav a:hover {
   padding: 1vmin 0 1vmin 0;
 }
 
+.location-div{
+  align-self: center;
+  margin: 2vmin;
+}
+
 .footer nav {
   display: flex;
   justify-content: space-around;
@@ -464,12 +469,21 @@ footer a:hover {
   margin: 1vmin;
 }
 
+.sides-div{
+  display: flex;
+  flex-direction: column;
+}
+
 .lunch-menu .sides {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   width: 100%;
   margin: 2vmin;
+}
+
+.sides h4{
+  align-self: center;
 }
 
 .lunch-special {

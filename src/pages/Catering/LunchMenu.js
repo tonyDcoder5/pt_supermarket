@@ -93,7 +93,9 @@ export default function LunchMenu() {
           </ul>
         </section>
       </div>
-      <section className="sides">
+      <section className="sides-div">
+        <h4>Sides</h4>
+        <div className="sides">
         <ul>
           <h5>Portion One</h5>
           {sides.rice.map((side) => {
@@ -127,6 +129,7 @@ export default function LunchMenu() {
             );
           })}
         </ul>
+        </div>
       </section>
       <h3>
         Small: {menuPrices.lunchSpecial[0]} | | Large:

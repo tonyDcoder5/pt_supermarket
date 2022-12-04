@@ -15,6 +15,27 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyCwJ2WehsOmWpoDU85dAwffB4DtgVrscQk"></script>
+    <script>
+      // Find a placeID via https://developers.google.com/places/place-id
+      googlePlaces("google-reviews", {
+        placeId: 'ChIJCdkbPV9854gRaHQk564fNek',
+        // the following params are optional (default values)
+        header: "<h3>Google Reviews</h3>", // html/text over Reviews
+        footer: '', // html/text under Reviews block
+        maxRows: 6, // max rows of reviews to be displayed
+        minRating: 4, // minimum rating of reviews to be displayed
+        months: ["Jan", "Feb", "Mär", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez"],
+        textBreakLength: "90", // length before a review box is set to max width
+        showDate: false, // renders the date of the review before the review itself
+        shortenNames: true, // example: "Max Mustermann" -> "Max M.""
+        replaceAnonymous: false, // do not replace anonymous author_name from JSON
+        anonymousName: "A Google User", // Google's default value depending on language used (en: "A Google User")
+        anonymousNameReplacement: "User chose to remain anonymous", // replacement for default (never shortens)
+      });
+  </script>
+
+
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
