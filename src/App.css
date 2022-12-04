@@ -191,6 +191,11 @@ nav a:hover {
   margin: 2vmin;
 }
 
+.location-div iframe{
+  width: 100%;
+  
+}
+
 .footer nav {
   display: flex;
   justify-content: space-around;
