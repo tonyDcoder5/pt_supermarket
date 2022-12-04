@@ -353,7 +353,6 @@ footer a:hover {
   flex-direction: column;
   justify-content: space-between;
   padding: 1vmin;
-
 }
 
 .catering-block {
@@ -411,16 +410,30 @@ footer a:hover {
 }
 
 .catering-div h2{
-  margin: 0 0 1vmin 0;
+  margin: 0 0 2vmin 0;
+  border-bottom: .2em dotted #fff;
+  width: fit-content;
+  align-self: center;
 }
 
 .catering-form .row{
   margin: 1vmin;
 }
 
-.catering-form button{
-  width: 50%;
-  align-self: center;
+.catering-form button {
+  margin: 2.5vmin;
+  padding: 2.5vmin;
+  border-radius: 25%;
+  width: 15%;
+  align-self: center;  
+  color: #fff;
+  background-color: #276ebf;
+  border: none;
+}
+
+.catering-form button:hover {
+  background-color: #6aaa45;
+  border: 0.2em solid #fff;
 }
 
 /* Lunch Menu */
