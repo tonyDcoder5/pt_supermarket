@@ -227,7 +227,7 @@ footer {
   flex-direction: column;
   justify-content: space-around;
   color: white;
-  padding: 2em;
+  padding: 1`em;
 }
 
 footer div {
@@ -366,6 +366,8 @@ footer a:hover {
   border: 0.2em solid #000;
   border-radius: 2.5vmin;
   width: 100%;
+  height: 50vmin;
+  overflow-y: scroll;
 }
 
 .catering-block .menu-item {
@@ -387,6 +389,8 @@ footer a:hover {
   border-radius: 2.5vmin;
   align-self: center;
   width: 100%;
+  height: 50vmin;
+  overflow-y: scroll;
 }
 
 .catering-form{
@@ -416,7 +420,7 @@ footer a:hover {
 .lunch-menu h3 {
   border-bottom: 0.25em dotted #fff;
   padding-bottom: 1vmin;
-  font-size: 4vmin;
+  font-size: 3vmin;
   width: fit-content;
   align-self: center;
 }
@@ -471,6 +475,8 @@ footer a:hover {
   border-radius: 2.5vmin;
   padding: 2vmin;
   width: 100%;
+  height: 50vmin;
+  overflow-y: scroll;
   margin: 1vmin;
 }
 
