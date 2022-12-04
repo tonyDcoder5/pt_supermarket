@@ -353,6 +353,7 @@ footer a:hover {
   flex-direction: column;
   justify-content: space-between;
   padding: 1vmin;
+
 }
 
 .catering-block {
@@ -397,6 +398,20 @@ footer a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 100%;
+}
+
+.catering-form input{
+  width: 100%; 
+}
+
+.catering-form textarea{
+  width: 100%;
+
+}
+
+.catering-div h2{
+  margin: 0 0 1vmin 0;
 }
 
 .catering-form .row{

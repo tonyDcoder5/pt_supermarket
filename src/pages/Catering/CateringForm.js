@@ -33,8 +33,8 @@ export default function CateringForm(){
 
     return(
         <div className="container-one catering-div"> 
-        <Form ref={form} onSubmit={sendEmail} className="catering-form">
         <h2>Cater With Us!</h2>
+        <Form ref={form} onSubmit={sendEmail} className="catering-form">
         <Form.Label>Name</Form.Label>
           <Row>
             <Form.Group as={Col} controlId="user_name">
@@ -42,6 +42,16 @@ export default function CateringForm(){
                 type="name"
                 placeholder="Enter name"
                 value={form.user_name}
+              />
+            </Form.Group>
+          </Row>
+          <Form.Label>Phone Number</Form.Label>
+          <Row>
+            <Form.Group as={Col} controlId="phone_number">
+              <Form.Control
+                type="number"
+                placeholder="Enter phone number"
+                value={form.phone_number}
               />
             </Form.Group>
           </Row>
@@ -56,15 +66,15 @@ export default function CateringForm(){
               />
             </Form.Group>
           </Row>
-          <Form.Label htmlFor="messageInput">Message</Form.Label>
+          <Form.Label htmlFor="orderInput">Order</Form.Label>
           <Row>
             <Form.Group as={Col}>
               <Form.Control 
-              value={form.message} 
+              value={form.order_input} 
               type="text" 
               as="textarea"
               rows={5}
-              name="message" />
+              name="order_input" />
             </Form.Group>
           </Row>
           <Button variant="primary" type="submit" name="contact-send-btn">
