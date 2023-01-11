@@ -188,13 +188,9 @@ nav a:hover {
 
 .location-div{
   align-self: center;
-  margin: 1vmin;
-  width: 90%;
-}
-
-.location-div iframe{
+  margin: 2vmin;
   width: 100%;
-  
+
 }
 
 .footer nav {
@@ -553,7 +549,12 @@ footer a:hover {
 
 .menu-item img {
   width: 15%;
+  height: 50%;
   margin: 1vmin;
+}
+
+.menu-item img:hover {
+  transform: scale(2.5);
 }
 
 .lunch-menu section {
@@ -579,11 +580,15 @@ footer a:hover {
   flex-direction: row;
   justify-content: space-evenly;
   width: 100%;
-  margin: 2vmin;
+  margin-top: 1em;
 }
 
 .sides h4{
   align-self: center;
+}
+
+.sides ul{
+  margin: .5em
 }
 
 .lunch-special {
@@ -653,7 +658,7 @@ footer a:hover {
   align-items: center;
   justify-content: space-evenly;
   background-color: #6aaa45;
-  padding: 2vmin;
+  padding: 1vmin;
   border-radius: 2vmin;
   border: 0.25vmin solid #000;
   box-shadow: 0 0 0.5em #fff;
@@ -674,7 +679,6 @@ footer a:hover {
   display: flex;
   width: 100%;
   flex-direction: column;
-  padding: 1vmin 0 1vmin 0;
 }
 
 .contact-form * {
@@ -700,10 +704,6 @@ footer a:hover {
 .contact-page .weekly-ad iframe {
   margin: 2vmin 0 2vmin 0;
   height: 100vmin;
-}
-
-.contact-section .container-two {
-  /* align-items: center; */
 }
 
 /* LARGE BREAKPOINT STYLES */
