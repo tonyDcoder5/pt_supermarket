@@ -443,10 +443,8 @@ footer a:hover {
   align-items: center;
   background-color: #dad2d8;
   border: 0.2em solid #000;
-  margin: 0.25em;
   padding: 1.5em;
   border-radius: 2.5vmin;
-  width: 100%;
 }
 
 .catering-form .row{
@@ -455,7 +453,6 @@ footer a:hover {
   padding: 1.5em;
   border-bottom: .5em dotted #6aaa45;
 }
-
 
 .catering-form input{
   padding: .2em;
@@ -493,6 +490,13 @@ footer a:hover {
 .catering-form button:hover {
   background-color: #6aaa45;
   border: 0.2em solid #fff;
+}
+
+@media screen and (max-width: 500px) {
+  .catering-form .row{
+    flex-direction: column;
+  }
+
 }
 
 /* Lunch Menu */
