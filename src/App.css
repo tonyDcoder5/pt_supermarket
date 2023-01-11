@@ -349,6 +349,7 @@ footer a:hover {
 /* CATERING PAGE */
 .catering-page {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   padding: 1vmin;
 }
@@ -369,7 +370,6 @@ footer a:hover {
   border: .25em solid #000;
   margin: 1em;
   padding: 2em;
-  width: 50%;
 }
 
 .catering-nav img{
