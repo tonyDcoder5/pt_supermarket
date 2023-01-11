@@ -498,8 +498,19 @@ footer a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  padding: 2vmin;
+  padding: 1vmin;
+}
+
+.lunch-menu section {
+  display: flex;
+  flex-direction: column;
+  background-color: #dad2d8;
+  border: 0.2em solid #000;
+  border-radius: 2.5vmin;
+  padding: 2em;
+  height: 50vmin;
+  overflow-y: scroll;
+  margin: 1vmin;
 }
 
 .lunch-menu h3 {
@@ -537,7 +548,7 @@ footer a:hover {
   list-style: none;
   text-align: right;
   font-size: 3vmin;
-  margin: 1vmin;
+  margin-bottom: 1vmin;
   border-bottom: 0.2em dotted #6aaa45;
 }
 
@@ -545,6 +556,13 @@ footer a:hover {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
+}
+
+.main-entrees div{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .menu-item img {
@@ -557,18 +575,6 @@ footer a:hover {
   transform: scale(2.5);
 }
 
-.lunch-menu section {
-  display: flex;
-  flex-direction: column;
-  background-color: #dad2d8;
-  border: 0.2em solid #000;
-  border-radius: 2.5vmin;
-  padding: 2vmin;
-  width: 100%;
-  height: 50vmin;
-  overflow-y: scroll;
-  margin: 1vmin;
-}
 
 .sides-div{
   display: flex;
