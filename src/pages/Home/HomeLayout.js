@@ -38,7 +38,6 @@ export default function HomeLayout() {
       <div className="section-two">
         <ImageCarousel />
         <Location />
-        {/* <ContainerTwo content={blockFour} /> */}
       </div>
     </div>
   );

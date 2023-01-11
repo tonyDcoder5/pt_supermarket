@@ -189,8 +189,10 @@ nav a:hover {
 .location-div{
   align-self: center;
   margin: 2vmin;
-  width: 100%;
+}
 
+.location-div{
+  width: 100%;
 }
 
 .footer nav {
