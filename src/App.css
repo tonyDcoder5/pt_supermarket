@@ -191,7 +191,7 @@ nav a:hover {
   margin: 2vmin;
 }
 
-.location-div{
+.location-div iframe {
   width: 100%;
 }
 
