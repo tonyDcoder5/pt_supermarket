@@ -202,6 +202,7 @@ export default function LunchMenu() {
 
   return (
     <div className="container-two lunch-menu">
+      <h2>Main Kitchen Menu</h2>
       <div className="main-entrees">
         <div>
           <h3>
@@ -283,6 +284,7 @@ export default function LunchMenu() {
           </ul>
         </div>
       </section>
+      <h2>Lunch Special Menu</h2>
       <h3>
         Small: {menuPrices.lunchSpecial[0]} | | Large:
         {menuPrices.lunchSpecial[1]}

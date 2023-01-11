@@ -519,6 +519,13 @@ footer a:hover {
   margin: 1vmin;
 }
 
+.lunch-menu h2{
+  color: #9e2b25;
+  font-size: 4vmin;
+  margin: 0;
+  text-shadow: 0 0 .2em #fff;
+}
+
 .lunch-menu h3 {
   border-bottom: 0.25em dotted #fff;
   padding-bottom: 1vmin;
