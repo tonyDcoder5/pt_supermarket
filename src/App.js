@@ -12,6 +12,8 @@ import HomeLayout from "./pages/Home/HomeLayout";
 import WeeklyAd from "./pages/WeeklyAd/WeeklyAd";
 import GalleryPage from "./pages/Gallery/GalleryPage";
 import CateringPage from "./pages/Catering/CateringPage";
+import CateringOrdering from "./pages/Catering/CateringOrdering";
+import LunchMenu from "./pages/Catering/LunchMenu";
 import Contact from "./pages/Contact/ContactPage";
 import NotFound from "./components/NotFound";
 import NavBar from "./components/NavBar";
@@ -30,6 +32,8 @@ function App() {
             <Route path="/weekly-ad" element={<WeeklyAd />} />
             <Route path="/gallery" element={<GalleryPage />} />
             <Route path="/catering" element={<CateringPage />} />
+            <Route path="/catering-ordering" element={<CateringOrdering />} />
+            <Route path="/catering-lunch" element={<LunchMenu />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

@@ -1,6 +1,5 @@
-import React from "react";
-import ContainerOne from "../../components/ContainerOne";
-import ContainerTwo from "../../components/ContainerTwo";
+import React, { useState } from "react";
+import { Document, Page } from 'react-pdf';
 
 import adPDF from "../../assets/docs/110322_weeklyad.pdf#toolbar=0";
 
@@ -11,6 +10,13 @@ export default function WeeklyAd() {
       "stretch scroll animation to view full ad and embedded link for downloadable version",
     image: "",
   };
+
+  const [numPages, setNumPages] = useState(null);
+  const [pageNumber, setPageNumber] = useState(1);
+
+  function onDocumentLoadSuccess({ numPages }) {
+    setNumPages(numPages);
+  }
 
   return (
     <div className="weekly-ad">
@@ -28,6 +34,10 @@ export default function WeeklyAd() {
       >
         PDF View
       </a>
+      {/* <Document file={`https://drive.google.com/file/d/11u82ONrWlgO2SFHELeIBBRKeDL_Nmr6L/view`} onLoadSuccess={onDocumentLoadSuccess}>
+        <Page pageNumber={pageNumber} />
+      </Document> */}
+
     </div>
   );
 }

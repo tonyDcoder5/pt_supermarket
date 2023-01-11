@@ -188,7 +188,8 @@ nav a:hover {
 
 .location-div{
   align-self: center;
-  margin: 2vmin;
+  margin: 1vmin;
+  width: 90%;
 }
 
 .location-div iframe{
@@ -350,7 +351,6 @@ footer a:hover {
 /* CATERING PAGE */
 .catering-page {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   padding: 1vmin;
 }
@@ -358,55 +358,114 @@ footer a:hover {
 .catering-block {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   margin: 1vmin;
   padding: 1vmin;
+}
+
+.catering-nav{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #dad2d8;
+  border: .25em solid #000;
+  margin: 1em;
+  padding: 2em;
+  width: 50%;
+}
+
+.catering-nav img{
+  width: 100%;
+  margin: 1em;
+}
+
+.catering-nav a{
+  margin: 1em;
+  text-decoration: none;
+  color: #6aaa45;
+  font-size: 1.25em;
+  font-weight: 800;
+  letter-spacing: .15em;
+  border-bottom: .25em dotted #276ebf;
+  width: fit-content;
+
 }
 
 .catering-select {
   border: 0.2em solid #000;
   border-radius: 2.5vmin;
   width: 100%;
-  height: 50vmin;
-  overflow-y: scroll;
 }
 
-.catering-block .menu-item {
+.catering-select .dishes a{
+  margin: .25em;
+}
+
+.catering-menu .menu-item {
   display: flex;
-  text-align: right;
   justify-content: space-between;
-  align-items: center;
-  padding: 2vmin;
-  margin: 1vmin;
+  margin: 1em;
   border-bottom: 0.25em dotted #6aaa45;
 }
 
-.catering-block .menu-item img {
-  width: 15%;
+.menu-item div{
+  width: 50%;
+  margin: 1em;
+}
+
+.catering-menu .menu-item img {
+  width: 20%;
+}
+
+.item-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 3.5vmin;
+}
+
+.item-actions{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 3vmin;
+}
+
+.item-actions section{
+  margin: .75em;
+}
+
+.item-actions section *{
+  padding: .5em;
 }
 
 .catering-div {
-  border: 0.2em solid #000;
-  border-radius: 2.5vmin;
-  align-self: center;
-  width: 100%;
-  height: 50vmin;
-  overflow-y: scroll;
-}
-
-.catering-form{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
+  background-color: #dad2d8;
+  border: 0.2em solid #000;
+  margin: 0.25em;
+  padding: 1.5em;
+  border-radius: 2.5vmin;
   width: 100%;
 }
 
+.catering-form .row{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1.5em;
+  border-bottom: .5em dotted #6aaa45;
+}
+
+
 .catering-form input{
-  width: 100%; 
+  padding: .2em;
+  margin: .5em;
 }
 
 .catering-form textarea{
   width: 100%;
-
 }
 
 .catering-div h2{
@@ -416,15 +475,17 @@ footer a:hover {
   align-self: center;
 }
 
-.catering-form .row{
-  margin: 1vmin;
+.catering-form .form-actions {
+  display: flex;
+  justify-content: space-around;
+  margin: 1em;
 }
 
 .catering-form button {
-  margin: 2.5vmin;
-  padding: 2.5vmin;
-  border-radius: 25%;
-  width: 15%;
+  margin: 2vmin;
+  padding: 2vmin;
+  border-radius: 2em;
+  width: 25%;
   align-self: center;  
   color: #fff;
   background-color: #276ebf;
@@ -598,6 +659,7 @@ footer a:hover {
   box-shadow: 0 0 0.5em #fff;
   width: 100%;
   height: 75%;
+  font-size: 1.5em;
 }
 
 .contact-page h2 {
@@ -617,12 +679,13 @@ footer a:hover {
 
 .contact-form * {
   text-align: center;
-  padding: 0.5vmin;
+  padding: 1vmin;
 }
 
 .contact-form button {
   margin: 2.5vmin;
   padding: 2.5vmin;
+  font-size: 1.25em;
   border-radius: 25%;
   color: #fff;
   background-color: #276ebf;
@@ -659,10 +722,7 @@ footer a:hover {
   /* GALLERY PAGE - RD */
 
   /* CATERING PAGE - RD */
-  .catering-block {
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
+
 
   /* CONTACT PAGE - RD */
   .contact-section {

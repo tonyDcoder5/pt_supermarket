@@ -25,7 +25,7 @@ export default function Footer() {
           <section>
             {data.hours.map(({ day, hours }) => {
               return (
-                <span>
+                <span key={day}>
                   <h3>{day}:</h3>
                   <p>
                     {hours[0]} - {hours[1]}
