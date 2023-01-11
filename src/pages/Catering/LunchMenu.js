@@ -226,7 +226,8 @@ export default function LunchMenu() {
         </div>
         <div>
           <h3>
-            Small: {menuPrices.premLunch[0]} | | Large: {menuPrices.premLunch[1]}
+            Small: {menuPrices.premLunch[0]} | | Large:{" "}
+            {menuPrices.premLunch[1]}
           </h3>
           <section className="premium-entrees">
             <h4>Premium Entrees</h4>
@@ -246,9 +247,9 @@ export default function LunchMenu() {
           </section>
         </div>
       </div>
+      <h4>Sides</h4>
+      <span>'Select a portion from each column'</span>
       <section className="sides-div">
-        <h4>Sides</h4>
-        <span>'Select a portion from each column'</span>
         <div className="sides">
           <ul>
             {sides.rice.map((side) => {

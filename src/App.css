@@ -565,7 +565,6 @@ footer a:hover {
 }
 
 .main-entrees div{
-  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -600,7 +599,8 @@ footer a:hover {
 }
 
 .sides ul{
-  margin: .5em
+  padding: 1em;
+  border-top: .2em dotted #9e2b25;
 }
 
 .lunch-special {
@@ -608,6 +608,20 @@ footer a:hover {
   width: 100%;
   justify-content: space-evenly;
 }
+
+@media screen and (max-width: 500px) {
+  .main-entrees {
+  flex-direction: column;
+  }
+  .lunch-special{
+    flex-direction: column;
+  }
+
+  .lunch-menu .sides {
+    flex-direction: column;
+  }
+}
+
 
 /* CONTACT PAGE */
 .contact-page {
